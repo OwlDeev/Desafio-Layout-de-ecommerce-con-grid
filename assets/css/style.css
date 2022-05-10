@@ -33,13 +33,13 @@ header{
   menu{
   grid-area: menu;
   background-color: rgb(255, 255, 255);
-  
+  font-family: Pretendo;
   }
 
   main{
   grid-area: main;
   background-color: rgb(255, 255, 255);
-  
+  font-family: Pretendo;
   }
 
   footer{
@@ -50,6 +50,7 @@ header{
   text-align: center;
   max-height: 100px;
   margin-top: 30px;
+  font-family: Pretendo;
   }
 
   body{
