@@ -22,7 +22,6 @@ header{
     flex-direction: column;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    font-family: Pretendo;
     }
 
   .header{
@@ -30,16 +29,18 @@ header{
     justify-content: center;
     align-items: center;
   }
+
+  .fontNintendo{
+    font-family: Pretendo;
+  }
   menu{
   grid-area: menu;
   background-color: rgb(255, 255, 255);
-  font-family: Pretendo;
   }
 
   main{
   grid-area: main;
   background-color: rgb(255, 255, 255);
-  font-family: Pretendo;
   }
 
   footer{
