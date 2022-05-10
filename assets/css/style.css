@@ -1,0 +1,143 @@
+@font-face {
+  font-family: Pretendo;
+  src: url('../fonts/pretendo/Pretendo.ttf') format('ttf'),
+    url('../fonts/pretendo/Pretendo.ttf') format('ttf');
+}
+
+header{
+  grid-area: header;
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+  font-family: Pretendo;
+  height: 100px;
+  }
+
+  #category{
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: Pretendo;
+    }
+
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  menu{
+  grid-area: menu;
+  background-color: rgb(255, 255, 255);
+  
+  }
+
+  main{
+  grid-area: main;
+  background-color: rgb(255, 255, 255);
+  
+  }
+
+  footer{
+  grid-area: footer;
+  background-color: #ff0000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  max-height: 100px;
+  margin-top: 30px;
+  }
+
+  body{
+    margin: 0;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 80%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+    gap: 0px;
+    }
+    
+  .grid-item-gallery{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    }
+
+  .tituloImgGallery{
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .desciptionPriceItem{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .izqContentItemGallery{
+    width: 150%;
+    padding: 5px;
+  }
+
+  .derContentItemGallery{
+    width: 50%;
+    padding: 5px;
+  }
+
+  .titlePriceItemGallery{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .grid-gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .buttonItemGallery{
+    width: 100%;
+    background-color: #bb2e40;
+    color: white;
+  }
+
+  #navHorizontal{
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 40em) {
+
+    .grid-container{
+  
+      grid-template-areas:
+  
+        "header header header header"
+  
+        "menu menu menu menu"
+  
+        "main main main main"
+  
+        "footer footer footer footer";
+  
+    }
+  
+  }
+  
+  
