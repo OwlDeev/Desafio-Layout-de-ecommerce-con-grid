@@ -52,6 +52,7 @@ header{
   max-height: 100px;
   margin-top: 30px;
   font-family: Pretendo;
+  width: 100%;
   }
 
   body{
@@ -124,22 +125,54 @@ header{
     flex-direction: row;
   }
 
-  @media screen and (max-width: 40em) {
+  @media only screen and (max-width: 480px) and (min-width: 100px)  {
 
     .grid-container{
   
       grid-template-areas:
   
-        "header header header header"
+        "header"
   
-        "menu menu menu menu"
+        "menu"
   
-        "main main main main"
+        "main"
   
-        "footer footer footer footer";
+        "footer";
   
     }
   
+    menu{
+      justify-content: center;
+      text-align: center;
+      }
+
+      .grid-gallery{
+        grid-template-columns: auto;
+      }
+  }
+
+  @media screen and (max-width: 1200px) and (min-width: 480px) {
+
+    .grid-container{
+  
+      grid-template-areas:
+  
+        "header header"
+  
+        "menu main"
+  
+        "footer footer";
+  
+    }
+  
+    menu{
+      justify-content: center;
+      text-align: center;
+      }
+
+      .grid-gallery{
+        grid-template-columns: auto auto;
+      }
   }
   
   
