@@ -107,11 +107,11 @@ header{
 
   .grid-gallery{
     display: grid;
-    grid-template-columns: auto auto auto;
     gap: 20px;
     justify-items: center;
     align-items: center;
     margin: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
   }
 
   .buttonItemGallery{
@@ -145,13 +145,9 @@ header{
       justify-content: center;
       text-align: center;
       }
-
-      .grid-gallery{
-        grid-template-columns: auto;
-      }
   }
 
-  @media screen and (max-width: 1200px) and (min-width: 480px) {
+   @media screen and (max-width: 1200px) and (min-width: 480px) {
 
     .grid-container{
   
@@ -169,10 +165,6 @@ header{
       justify-content: center;
       text-align: center;
       }
-
-      .grid-gallery{
-        grid-template-columns: auto auto;
-      }
   }
   
-  
+
